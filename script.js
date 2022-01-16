@@ -3,7 +3,7 @@ let words = new Map();
 function preload() {
   loadStrings('beale.wordlist.asc.txt', createMap);
 }
-/**
+/** Notes from Mr. Oswald's code:
  * This function goes through the word list line-by-line.
  * It then splits the line on any tab characters that appear, 
  *   recording only the first two as 'key' and 'value'
@@ -59,7 +59,7 @@ function draw() {
   textSize(25)
   textFont('Georgia')
   textStyle(NORMAL)
-
+  //prints the generated password
   text(password, 150, 150);
   noLoop();
 }
@@ -70,7 +70,7 @@ function buildpassword() {
   let c = random([1, 2, 3, 4, 5, 6])
   let d = random([1, 2, 3, 4, 5, 6])
   let e = random([1, 2, 3, 4, 5, 6])
-  //randomzed numbers correspone to the beale wordlist to generate phrases for the password. ".join" brings the phrases together to create the password
+  //randomized numbers in an array correspond to sets of numbers in the beale wordlist to generate phrases for the password. Candice Medina helped me finish off this code by adding ".join" to bring the phrases together to create the password
   let lookupKey = [a, b, c, d, e].join('');
 
   let x = words.get(lookupKey)
