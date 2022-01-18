@@ -7,6 +7,9 @@ Self Evaluation
 
 The skills this project focused on were: 
 
+Learning to use Diceware to generate random, secure passwords. Specifically, how to generate five random numbers in the range of 1-6 to create a key
+for a word associated with that key.
+
 My project exhibits
 
 - [ ] mastery of
